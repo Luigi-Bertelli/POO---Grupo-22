@@ -5,13 +5,17 @@ class Violao{
 public:
     string modelo, marca, cor, tipoCorda;
 private:
-    //Getters
+    // Construtores
+    Violao();
+    Violao(string modelo, string marca, string cor, string tipoCorda = ""); 
+
+    // Getters
     string getModelo();
     string getMarca();
     string getCor();
     string getTipoCorda();
 
-    //Setters
+    // Setters
     void setModelo(string modelo);
     void setMarca(string marca);
     void setCor(string cor);
