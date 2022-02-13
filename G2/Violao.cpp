@@ -22,6 +22,7 @@ Violao::Violao(string modelo, string marca, string cor, string tipoCorda = "")
     Violao::setTipoCorda(tipoCorda);
 }
 
+// Toca a nota de acordo com o acorde passado
 string Violao::tocar(char nota)
 {
     srand(time(NULL));
@@ -58,6 +59,7 @@ string Violao::tocar(char nota)
     return tocou;    
 }
 
+// Redus a porcentagem de desafinar para zero
 void Violao::afinar()
 {
     setPctErro(0);
