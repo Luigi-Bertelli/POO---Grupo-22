@@ -5,7 +5,7 @@ using namespace std;
 class Violao{
 private:
     string modelo, marca, cor, tipoCorda;
-    float pctErro; // Porcentagem da nota sair desafinada
+    int pctErro; // Porcentagem da nota sair desafinada
 public:
     // Construtores
     Violao();
@@ -16,14 +16,14 @@ public:
     string getMarca();
     string getCor();
     string getTipoCorda();
-    float getPctErro();
+    int getPctErro();
 
     // Setters
     void setModelo(string modelo);
     void setMarca(string marca);
     void setCor(string cor);
     void setTipoCorda(string tipoCorda);
-    void setPctErro(float pct);
+    void setPctErro(int pct);
          
     string tocar(char nota); // Toca nota passada por parâmetro
     void afinar(); // Afina o violão
